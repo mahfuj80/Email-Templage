@@ -4,89 +4,308 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      @media (max-width: 600px) {
+        /* Styles for small devices (e.g., smartphones) */
+        .example {
+          font-size: 14px;
+          padding: 10px;
+          background-color: lightblue;
+        }
+        .no-order-img {
+          width: 208px !important;
+        }
+        .new-order-font {
+          font-size: 40px !important;
+        }
+        .footer-text-width {
+          width: 95% !important;
+          margin-top: 2px !important;
+        }
+        .banner-text-width-and-size {
+          font-size: 23px !important;
+          width: 95% !important;
+        }
+        .help-center {
+          width: 95% !important;
+          flex-direction: column !important;
+          gap: 0px !important;
+        }
+        .help-center-img {
+          width: 100px !important;
+        }
+        .help-center-text {
+          text-align: center !important;
+        }
+        .social-icons {
+          margin-top: 4px !important;
+        }
+        .footer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+          padding-top: 40px !important;
+          padding-bottom: 10px;
+        }
+        .address {
+          width: 95% !important;
+        }
+      }
+    </style>
   </head>
   <body style="background-color: #c3c3c3; margin: 0">
     <main style="max-width: 720px; margin: auto; background-color: #f5f5f5">
       <!-- Header -->
       <div style="display: flex; gap: 5px; align-items: center">
-        <img src="logo.png" alt="Image" />
-        <h1 style="color: #0f8898">Blink</h1>
+        <img
+          class=""
+          style="padding-bottom: 20px; padding-top: 20px; padding-left: 20px"
+          src="logo.png"
+          alt="Image"
+        />
       </div>
       <section
         style="
           background-color: white !important;
           margin-left: 20px;
           margin-right: 20px;
+          padding-bottom: 20px;
+          border-radius: 10px;
         "
       >
         <!-- Image and Text -->
-        <div>
-          <img src="banner.png" alt="Image" />
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+          "
+        >
+          <img
+            class="no-order-img"
+            style="
+              width: 250px;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 50px;
+            "
+            src="no-order.png"
+            alt="Image"
+          />
           <div>
-            <p>Still Thinking?</p>
-            <p>
-              If you can't decide here are some things we think you can do with
-              our product!
+            <p
+              class="new-order-font"
+              style="
+                font-size: 43px;
+                font-weight: 900;
+                margin-top: 50px;
+                margin-bottom: 20px;
+              "
+            >
+              New Order Received!
+            </p>
+            <p
+              class="banner-text-width-and-size"
+              style="color: gray; font-size: 24px; width: 80%; margin: auto"
+            >
+              Congratulations! A new order has arrived. Log in to NextOxy's my
+              store dashboard to view & start processing the order.
             </p>
           </div>
         </div>
 
         <!-- Have a Questions -->
-        <div>
-          <p>Have a questions?</p>
-          <div>
-            <div>
-              <p>Can I control how Blink is used?</p>
-              <p>
-                Yes, You can choose to disable the ability for customers to
-                upload attachments.
-              </p>
-            </div>
-            <div>
-              <p>Can I customize templates?</p>
-              <p>
-                Yes, you can (and should) customize Blink email templates to
-                match you brand.
-              </p>
-            </div>
-            <div>
-              <p>How to change the templates?</p>
-              <p>
-                Just open a template in your favorite text editor and insert
-                your content and images.
-              </p>
-            </div>
-            <div>
-              <p>Is it easy to use?</p>
-              <p>
-                Yes it is if you have basic coding skills just try it by
-                yourself,
-              </p>
-            </div>
-          </div>
-          <button>See all questions</button>
-          <hr />
-          <div>
-            <img src="hat.png" alt="Image" />
-            <p>
-              <span>We're here for you. </span>If you have any questions or you
-              need an assistance just<a href="#">let us know.</a>
-            </p>
-          </div>
+        <a style="text-decoration: none" href="https://nextoxy.com/auth/login/">
+          <button
+            style="
+              border-radius: 5px;
+              background-color: #6c53ff;
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: 600;
+              margin: 30px auto;
+              cursor: pointer;
+              width: fit-content;
+              display: block;
+              margin-bottom: 20px;
+            "
+          >
+            My Account
+          </button>
+        </a>
+        <hr
+          style="
+            width: 90%;
+            margin-top: 50px;
+            background-color: rgb(231, 231, 231);
+            border: none;
+            height: 2px;
+          "
+        />
+
+        <div
+          class="help-center"
+          style="
+            display: flex;
+            gap: 20px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+          "
+        >
+          <img
+            class="help-center-img"
+            style="width: 180px"
+            src="live-chat.png"
+            alt="Image"
+          />
+          <p class="help-center-text" style="font-size: 20px">
+            Feel free to contact us anytime, please visit
+            <a href="#"> Help Center</a>
+            or open ticket at service dashboard.
+          </p>
         </div>
       </section>
       <!-- Footer -->
-      <footer>
-        <p>Sent with 🖤 from Blink</p>
-        <p>Blink Inc. 300 S Santa Fe, Los Angeles, CA, 91200</p>
-        <p><a href="#">View in browser</a>* <a href="#">Unsubscribe</a></p>
+      <footer
+        class="footer"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+          padding-top: 20px;
+          padding-bottom: 10px;
+        "
+      >
+        <p
+          style="
+            margin: 0;
+            margin-bottom: 10px;
+            color: gray;
+            font-size: 20px;
+            text-align: center;
+          "
+        >
+          NextOxy Technology Limited
+        </p>
+        <p
+          class="address"
+          style="
+            margin: 0;
+            margin-bottom: 10px;
+            color: gray;
+            font-size: 20px;
+            text-align: center;
+          "
+        >
+          46 Packhorse Road, Stratford-Upon-Avon, England, CV37 9AW
+        </p>
+        <p style="margin: 0; margin-bottom: 10px">
+          <a href="#">Visit NextOxy</a> . <a href="#">Unsubscribe</a>
+        </p>
 
+        <p
+          class="footer-text-width"
+          style="
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: rgb(83, 83, 83);
+            width: 70%;
+            font-size: 15px;
+            text-align: center;
+            font-style: italic;
+          "
+        >
+          *You are receiving this email because you registered in
+          <a href="#">NextOxy.com</a>
+          and accepted <a href="#">Terms & Conditions</a>,
+          <a href="#">Privacy Policy</a> where we had mentioned about sending
+          promotional and updates emails. If you do not wish to receive further
+          email from us please click on the unsubscribe button above. Thank you.
+        </p>
         <!-- Social Icons -->
-        <div>
-          <a href="#"><img src="facebook.png" alt="Image" /></a>
-          <a href="#"><img src="twitter.png" alt="Image" /></a>
-          <a href="#"><img src="instagram.png" alt="Image" /></a>
-          <a href="#"><img src="linkedin.png" alt="Image" /></a>
+        <div
+          class="social-icons"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            width: 95%;
+            margin-top: 40px;
+            padding: 0;
+          "
+        >
+          <a
+            style="
+              flex: 1 1 25%;
+              box-sizing: border-box;
+              border: 1px solid gray;
+              display: block;
+              text-align: center;
+            "
+            href="#"
+          >
+            <img
+              src="facebook.png"
+              alt="Facebook"
+              style="width: 40px; height: auto; display: inline-block"
+            />
+          </a>
+          <a
+            style="
+              flex: 1 1 25%;
+              box-sizing: border-box;
+              border: 1px solid gray;
+              display: block;
+              text-align: center;
+            "
+            href="#"
+          >
+            <img
+              src="x.png"
+              alt="X"
+              style="width: 40px; height: auto; display: inline-block"
+            />
+          </a>
+          <a
+            style="
+              flex: 1 1 25%;
+              box-sizing: border-box;
+              border: 1px solid gray;
+              display: block;
+              text-align: center;
+            "
+            href="#"
+          >
+            <img
+              src="instagram.png"
+              alt="Instagram"
+              style="width: 40px; height: auto; display: inline-block"
+            />
+          </a>
+          <a
+            style="
+              flex: 1 1 25%;
+              box-sizing: border-box;
+              border: 1px solid gray;
+              display: block;
+              text-align: center;
+            "
+            href="#"
+          >
+            <img
+              src="pintarest.png"
+              alt="Pinterest"
+              style="width: 40px; height: auto; display: inline-block"
+            />
+          </a>
         </div>
       </footer>
     </main>
