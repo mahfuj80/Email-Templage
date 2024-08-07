@@ -3,131 +3,311 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NextOxy Landing Page</title>
+    <title>Document</title>
     <style>
-      body {
-        font-family: Inter, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      .container {
-        width: 100%;
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 10px;
-      }
-      .header {
-        text-align: center;
-        padding: 20px;
-      }
-      .header img {
-        max-width: 100%;
-        height: auto;
-      }
-      .header h1 {
-        margin: 20px 0 10px;
-        font-size: 24px;
-      }
-      .banner {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-        padding: 20px 0;
-      }
-      .banner img {
-        max-width: 100%;
-        height: auto;
-      }
-      .banner-text {
-        margin-top: 20px;
-      }
-      .features {
-        background-color: #f8f8f8;
-        padding: 20px 0;
-        text-align: center;
-      }
-      .features h2 {
-        margin-bottom: 20px;
-        font-size: 22px;
-      }
-      .feature-items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .feature-item {
-        width: 45%;
-        max-width: 200px;
-        margin: 10px;
-        padding: 10px;
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      .feature-item img {
-        max-width: 50px;
-        margin-bottom: 10px;
-      }
-      .cta {
-        text-align: center;
-        padding: 20px;
-      }
-      .cta button {
-        background-color: #7a5af9;
-        color: white;
-        border: none;
-        padding: 15px 25px;
-        font-size: 18px;
-        cursor: pointer;
-        border-radius: 5px;
-      }
-      @media (max-width: 768px) {
-        .feature-item {
-          width: 100%;
+      @media (max-width: 600px) {
+        /* Styles for small devices (e.g., smartphones) */
+        .example {
+          font-size: 14px;
+          padding: 10px;
+          background-color: lightblue;
+        }
+        .no-order-img {
+          width: 208px !important;
+        }
+        .new-order-font {
+          font-size: 40px !important;
+        }
+        .footer-text-width {
+          width: 95% !important;
+          margin-top: 2px !important;
+        }
+        .banner-text-width-and-size {
+          font-size: 23px !important;
+          width: 95% !important;
+        }
+        .help-center {
+          width: 95% !important;
+          flex-direction: column !important;
+          gap: 0px !important;
+        }
+        .help-center-img {
+          width: 100px !important;
+        }
+        .help-center-text {
+          text-align: center !important;
+        }
+        .social-icons {
+          margin-top: 4px !important;
+        }
+        .footer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+          padding-top: 40px !important;
+          padding-bottom: 10px;
+        }
+        .address {
+          width: 95% !important;
         }
       }
     </style>
   </head>
-  <body>
-    <div class="container">
-      <div class="header">
-        <img src="logo.png" alt="NextOxy" />
-        <h1>WELCOME TO NEXTOXY</h1>
+  <body style="background-color: #c3c3c3; margin: 0">
+    <main style="max-width: 720px; margin: auto; background-color: #f5f5f5">
+      <!-- Header -->
+      <div style="display: flex; gap: 5px; align-items: center">
+        <img
+          class=""
+          style="padding-bottom: 20px; padding-top: 20px; padding-left: 20px"
+          src="logo.png"
+          alt="Image"
+        />
       </div>
-      <div class="banner">
-        <img src="banner.png" alt="NextOxy Banner" />
-        <div class="banner-text">
-          <h2>
-            Build Your Service Landing Page & eCommerce Website With NextOxy
-          </h2>
+      <section
+        style="
+          background-color: white !important;
+          margin-left: 20px;
+          margin-right: 20px;
+          padding-bottom: 20px;
+          border-radius: 10px;
+        "
+      >
+        <!-- Image and Text -->
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+          "
+        >
+          <img
+            class="no-order-img"
+            style="
+              width: 250px;
+              margin-left: auto;
+              margin-right: auto;
+              margin-top: 50px;
+            "
+            src="no-order.png"
+            alt="Image"
+          />
+          <div>
+            <p
+              class="new-order-font"
+              style="
+                font-size: 43px;
+                font-weight: 900;
+                margin-top: 50px;
+                margin-bottom: 20px;
+              "
+            >
+              New Order Received!
+            </p>
+            <p
+              class="banner-text-width-and-size"
+              style="color: gray; font-size: 24px; width: 80%; margin: auto"
+            >
+              Congratulations! A new order has arrived. Log in to NextOxy's my
+              store dashboard to view & start processing the order.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="features">
-        <h2>WHAT YOU CAN DO WITH NEXTOXY?</h2>
-        <div class="feature-items">
-          <div class="feature-item">
-            <img src="icon1.png" alt="Ecommerce Websites" />
-            <p>Create eCommerce Websites</p>
-          </div>
-          <div class="feature-item">
-            <img src="icon2.png" alt="Lead Gen Landing Pages" />
-            <p>Create Services/Lead Gen Landing Pages</p>
-          </div>
-          <div class="feature-item">
-            <img src="icon3.png" alt="Instant and Automatic" />
-            <p>Instant & Automated</p>
-          </div>
-          <div class="feature-item">
-            <img src="icon4.png" alt="Affordable Cost" />
-            <p>Digital Tools & Marketing</p>
-          </div>
+
+        <!-- Have a Questions -->
+        <a style="text-decoration: none" href="https://nextoxy.com/auth/login/">
+          <button
+            style="
+              border-radius: 5px;
+              background-color: #6c53ff;
+              border: none;
+              color: white;
+              padding: 15px 32px;
+              text-align: center;
+              text-decoration: none;
+              font-size: 16px;
+              font-weight: 600;
+              margin: 30px auto;
+              cursor: pointer;
+              width: fit-content;
+              display: block;
+              margin-bottom: 20px;
+            "
+          >
+            My Account
+          </button>
+        </a>
+        <hr
+          style="
+            width: 90%;
+            margin-top: 50px;
+            background-color: rgb(231, 231, 231);
+            border: none;
+            height: 2px;
+          "
+        />
+
+        <div
+          class="help-center"
+          style="
+            display: flex;
+            gap: 20px;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+          "
+        >
+          <img
+            class="help-center-img"
+            style="width: 180px"
+            src="live-chat.png"
+            alt="Image"
+          />
+          <p class="help-center-text" style="font-size: 20px">
+            Feel free to contact us anytime, please visit
+            <a href="#"> Help Center</a>
+            or open ticket at service dashboard.
+          </p>
         </div>
-      </div>
-      <div class="cta">
-        <button>Get Started</button>
-      </div>
-    </div>
+      </section>
+      <!-- Footer -->
+      <footer
+        class="footer"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+          padding-top: 20px;
+          padding-bottom: 10px;
+        "
+      >
+        <p
+          style="
+            margin: 0;
+            margin-bottom: 10px;
+            color: gray;
+            font-size: 20px;
+            text-align: center;
+          "
+        >
+          NextOxy Technology Limited
+        </p>
+        <p
+          class="address"
+          style="
+            margin: 0;
+            margin-bottom: 10px;
+            color: gray;
+            font-size: 20px;
+            text-align: center;
+          "
+        >
+          46 Packhorse Road, Stratford-Upon-Avon, England, CV37 9AW
+        </p>
+        <p style="margin: 0; margin-bottom: 10px">
+          <a href="#">Visit NextOxy</a> . <a href="#">Unsubscribe</a>
+        </p>
+
+        <p
+          class="footer-text-width"
+          style="
+            margin-top: 20px;
+            margin-bottom: 10px;
+            color: rgb(83, 83, 83);
+            width: 70%;
+            font-size: 15px;
+            text-align: center;
+            font-style: italic;
+          "
+        >
+          *You are receiving this email because you registered in
+          <a href="#">NextOxy.com</a>
+          and accepted <a href="#">Terms & Conditions</a>,
+          <a href="#">Privacy Policy</a> where we had mentioned about sending
+          promotional and updates emails. If you do not wish to receive further
+          email from us please click on the unsubscribe button above. Thank you.
+        </p>
+        <!-- Social Icons -->
+        <div
+          class="social-icons"
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            width: 95%;
+            margin-top: 40px;
+            padding: 0;
+          "
+        >
+          <a
+            style="
+              flex: 1 1 25%;
+              box-sizing: border-box;
+              border: 1px solid gray;
+              display: block;
+              text-align: center;
+            "
+            href="#"
+          >
+            <img
+              src="facebook.png"
+              alt="Facebook"
+              style="width: 40px; height: auto; display: inline-block"
+            />
+          </a>
+          <a
+            style="
+              flex: 1 1 25%;
+              box-sizing: border-box;
+              border: 1px solid gray;
+              display: block;
+              text-align: center;
+            "
+            href="#"
+          >
+            <img
+              src="x.png"
+              alt="X"
+              style="width: 40px; height: auto; display: inline-block"
+            />
+          </a>
+          <a
+            style="
+              flex: 1 1 25%;
+              box-sizing: border-box;
+              border: 1px solid gray;
+              display: block;
+              text-align: center;
+            "
+            href="#"
+          >
+            <img
+              src="instagram.png"
+              alt="Instagram"
+              style="width: 40px; height: auto; display: inline-block"
+            />
+          </a>
+          <a
+            style="
+              flex: 1 1 25%;
+              box-sizing: border-box;
+              border: 1px solid gray;
+              display: block;
+              text-align: center;
+            "
+            href="#"
+          >
+            <img
+              src="pintarest.png"
+              alt="Pinterest"
+              style="width: 40px; height: auto; display: inline-block"
+            />
+          </a>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
